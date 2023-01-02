@@ -22,7 +22,7 @@ def currencyConvert():
     answer = str(client.service.convert(amount, currency0, currency1))
     currencyList = client.service.getCurrencyList()
 
-    return render_template("CurrencyConvert.html", currencyList=currencyList, len=len(currencyList), answer=answer)
+    return render_template("CurrencyConvert.html", currencyList=currencyList, len=len(currencyList), amount=amount)
 
 
 if __name__ == "__main__":
